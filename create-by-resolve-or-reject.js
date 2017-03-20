@@ -65,3 +65,15 @@ Promise.resolve(thenable2).then(function(value) {
 });
 
 console.log(Promise.resolve(thenable2) instanceof Promise); // true
+
+
+
+// reason
+var reason = new Error('Not Chang!');
+
+Promise.reject(reason).then(function(value) {
+  // not called
+}, function(error) {
+  console.log(error); // Error: Not Chang!
+  console.log(error === reason); // true
+});
