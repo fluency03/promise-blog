@@ -1,0 +1,26 @@
+{
+  "name": "promise-blog",
+  "version": "1.0.0",
+  "description": "promise-blog",
+  "main": "new-promise.js",
+  "dependencies": {
+    "q": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fluency03/promise-blog.git"
+  },
+  "keywords": [
+    "q"
+  ],
+  "author": "Chang Liu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fluency03/promise-blog/issues"
+  },
+  "homepage": "https://github.com/fluency03/promise-blog#readme"
+}
