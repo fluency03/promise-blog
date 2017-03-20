@@ -13,14 +13,14 @@ var promise = new Promise(function(resolve, reject) {
 
 
 // promise.then(function(result) {
-//   console.log(result); // You are Chang!
+//   console.log(result); // "You are Chang!"
 // }, function(err) {
 //   console.log(err); // Error: You are not Chang!
 // });
 
 
 // promise.then(function(result) {
-//   console.log(result); // You are Chang!
+//   console.log(result); // "You are Chang!"
 // }).catch(function(err) {
 //   console.log(err); // Error: You are not Chang!
 // });
