@@ -1,4 +1,11 @@
-// value: string
+/**
+ * Create a promise using Promise.resolve or Promise.reject.
+ */
+
+/**
+ * ------ value: string
+ */
+
 Promise.resolve('I am Chang!').then(function(value) {
   console.log(value); // "I am Chang!"
 }, function(error) {
@@ -6,7 +13,10 @@ Promise.resolve('I am Chang!').then(function(value) {
 });
 
 
-// value: array
+/**
+ * ------ value: array
+ */
+
 Promise.resolve(['I', 'am', 'Chang', '!']).then(function(value) {
   console.log(value[2]); // "Chang"
 }, function(error) {
@@ -14,7 +24,9 @@ Promise.resolve(['I', 'am', 'Chang', '!']).then(function(value) {
 });
 
 
-// promise
+/**
+ * ------ promise
+ */
 var iAmChang = false;
 
 var promise = new Promise(function(resolve, reject) {
@@ -37,12 +49,14 @@ Promise.resolve(promise).then(function(value) {
 console.log(Promise.resolve(promise) === promise); // true
 
 
-// thenable1
+/**
+ * ------ thenable1
+ */
+
 var thenable1 = { then: function(resolve) {
   throw Error('thenable1 Throwing');
   resolve('thenable1 Resolving');
 }};
-
 
 Promise.resolve(thenable1).then(function(value) {
   console.log(value);
@@ -53,7 +67,10 @@ Promise.resolve(thenable1).then(function(value) {
 console.log(Promise.resolve(thenable1) instanceof Promise); // true
 
 
-// thenable2
+/**
+ * ------ thenable2
+ */
+
 var thenable2 = { then: function(resolve) {
   resolve('thenable2 Resolving');
 }};
@@ -68,7 +85,10 @@ console.log(Promise.resolve(thenable2) instanceof Promise); // true
 
 
 
-// reason
+/**
+ * ------ reason
+ */
+
 var reason = new Error('Not Chang!');
 
 Promise.reject(reason).then(function(value) {

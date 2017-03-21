@@ -1,3 +1,8 @@
+/**
+ * Create new promise and test it in 4 then scenarios.
+ */
+
+
 var iAmChang = false;
 
 var promise = new Promise(function(resolve, reject) {

@@ -1,3 +1,7 @@
+/**
+ * Q.denodeify example
+ */
+
 var Q = require('q');
 
 var nodeStyleFunc = function(boolValue, intValue, strValue, callback) {
